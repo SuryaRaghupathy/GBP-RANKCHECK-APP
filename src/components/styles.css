@@ -1,0 +1,205 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+/* Logo Styling */
+.logo {
+  max-width: 80px; /* Logo size */
+  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto; /* Center the logo */
+}
+
+/* Heading Styling */
+.heading {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px; /* Reduced spacing */
+  text-align: center;
+}
+
+/* Text Container Styling */
+.text-container {
+  margin-bottom: 12px; /* Tightened spacing */
+  text-align: center;
+}
+
+.subtext {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0; /* Space between subtext lines */
+}
+
+.subtext a {
+  color: #667eea;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.subtext a:hover {
+  text-decoration: underline;
+}
+
+/* File Uploader Box Styling */
+.file-uploader {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Upload Area Styling */
+.upload-area {
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed #c7d2fe;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #f9faff;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.upload-area:hover {
+  background: #eef2ff;
+  transform: scale(1.02); /* Slight zoom-in on hover */
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+}
+
+/* Buttons Styling */
+.button-container button {
+  width: 200px; /* Consistent button size */
+  height: 50px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for contrast */
+}
+
+/* Start Tracking Button */
+.start-tracking-btn {
+  background-color: #667eea;
+  color: #fff;
+}
+
+.start-tracking-btn:hover {
+  background-color: #5a67d8;
+  transform: scale(1.05);
+}
+
+.start-tracking-btn:disabled {
+  background-color: #c7d2fe;
+  cursor: not-allowed;
+}
+
+/* Download Result Button */
+.download-result-btn {
+  background-color: #c7d2fe;
+  color: #fff;
+}
+
+.download-result-btn:enabled {
+  background-color: #667eea;
+  cursor: pointer;
+}
+
+.download-result-btn:enabled:hover {
+  background-color: #5a67d8;
+  transform: scale(1.05);
+}
+
+/* Loading Container for Processing Text and Progress Bar */
+.loading-container {
+  text-align: center;
+  margin-top: 20px; /* Add spacing from buttons */
+}
+
+/* Processing Text */
+.processing-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px; /* Add spacing below text */
+}
+
+/* Progress Bar */
+.progress-bar-container {
+  width: 80%; /* Centered and responsive width */
+  margin: 0 auto; /* Center-align container */
+  height: 10px;
+  background: #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #4caf50;
+  transition: width 0.3s ease;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+  .logo {
+    max-width: 70px;
+  }
+  .heading {
+    font-size: 22px;
+  }
+  .text-container {
+    margin-bottom: 10px;
+  }
+  .file-uploader {
+    padding: 10px;
+  }
+  .button-container button {
+    width: 180px;
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 480px) {
+  .logo {
+    max-width: 60px;
+  }
+  .heading {
+    font-size: 18px;
+  }
+  .subtext {
+    font-size: 12px;
+  }
+  .file-uploader {
+    padding: 10px;
+    max-width: 90%;
+  }
+  .button-container button {
+    width: 150px;
+    height: 40px;
+    font-size: 12px;
+  }
+  .progress-bar-container {
+    width: 100%;
+  }
+}
